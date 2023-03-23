@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-position: center;
+  background-color: cover;
+}
+
+.game_infos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.container {
+  height: 400px;
+  width: 500px;
+  border: solid 1px #999;
+  cursor: crosshair;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#target {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  transition: 0.25s;
+  animation: animateTarget 10s infinite;
+}
+
+button {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #3c7103;
+  color: #fff;
+}
+
+@keyframes animateTarget{
+to{
+    transform: translateY(-200px) rotate(90deg);
+}
+}
